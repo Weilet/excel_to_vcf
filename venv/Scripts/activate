@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Lily_Sun\Desktop\excel_to_vcf\venv"
+VIRTUAL_ENV="C:\Users\Lily_Sun\Documents\GitHub\excel_to_vcf\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
