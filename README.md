@@ -1,4 +1,4 @@
-## excel_2_vcf
+## excf
 
 #### 简介
 
@@ -7,10 +7,12 @@
 #### 快速使用
 
 1. 安装 `python 3`
-2. 使用 `pip` 安装 `xlrd`模块 
-3. 使用 `python 3 ` 运行脚本
-4. 输入 excel 文件路径即可获得联系人vcard
+2. 使用 `pip -r requirement.txt` 安装 依赖 
+3. 使用 `python run.py` 运行
 
 #### TODO
 
-1. 一个好看的图形界面（在很久的将来）
+
+- [x] 图形界面   
+- [ ] 美化界面
+- [ ] 利用更多接口

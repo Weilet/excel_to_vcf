@@ -3,7 +3,7 @@ import xlrd
 
 
 class VcfCreator(object):
-    def __init__(self, sh, name_col_num=0, phone_col_num=1, filename=None, vcard_name=None):
+    def __init__(self, name_col_num=0, phone_col_num=1, filename=None, vcard_name=None):
         """
         :param sh: `sheet class object` the sheet include name and phone
         :param name_col_num: column number of names
@@ -13,6 +13,7 @@ class VcfCreator(object):
         """
         os.getcwd().encode('utf-8')  # set coding to utf-8
         self.info_list = []
+        self.filepath = ''
         self.read_file = ''
         self.name_col_number = name_col_num
         self.phone_col_number = phone_col_num
@@ -24,7 +25,7 @@ class VcfCreator(object):
         read the file info and store it into the object
         """
         filename = filename or self.filename
-        assert (isinstance(is_title_exist, bool))
+        assert isinstance(is_title_exist, bool)
         if filename:
             try:
                 # Use slice to remove the title
